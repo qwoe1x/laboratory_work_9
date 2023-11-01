@@ -12,6 +12,11 @@ body {
 
 }
 
+:root {
+    --gap: 1em;
+    --index: calc(1vw + 1vh);
+}
+
 .top-panel {
     background-color: #333;
     color: #fff;
@@ -214,4 +219,32 @@ a {
 .data-list li {
     margin-top: 15px;
     
+}
+
+.gallery {
+    width: 100%;
+    column-count: 5;
+    column-gap: var(--gap);
+    transform: scale(1);
+    will-change: transform;
+    transition: transform 1s cubic-bezier(.075, 1, .25, 1);
+    opacity: 1;
+}
+
+.gallery__item {
+    display: inline-block;
+    margin-bottom: var(--gap);
+    transform: scale(1.001);
+    transition: .3s;
+    will-change: transform;
+}
+
+.gallery__item:hover {
+    transform: scale(1.05);
+}
+
+.gallery__item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
