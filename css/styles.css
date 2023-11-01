@@ -1,7 +1,11 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(45deg, #1f1c2c, #414345, #232526, #928dab);
+    background-size: 500% 500%;
+    animation: color 15s ease-in-out infinite;
+
 }
 
 .top-panel {
@@ -12,6 +16,18 @@ body {
     align-items: center;
     padding: 10px 20px;
     opacity: 0.7;
+}
+
+@keyframes color {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
 }
 
 .logo a {
@@ -30,16 +46,29 @@ nav ul {
 
 nav li {
     margin-right: 20px;
+    padding: 10px;
 }
-
+nav li:hover {
+    transform: scale(1.05);
+    transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
 nav a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
     font-size: 18px;
-    transition: color 0.5s;
+    transition: color 0.3s;
 }
 
 nav a:hover {
     color: #FF5733;
+    opacity: 1;
+}
+
+h2{
+    font-size: 50px;
+    margin: 0 auto 20 px auto;
+    color: #bdc3c7;
+    text-align: center;
+    position: relative;
 }
