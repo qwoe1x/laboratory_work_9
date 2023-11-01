@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	overflow: hidden;
+    min-height: 100vh;
+    user-select: none;
+
+}
+
+.top-panel {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    opacity: 0.7;
+    box-shadow: 0 7px 10px rgba(1, 0, 0, 1);
+}
+
+.logo {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    list-style-type: none;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    list-style: none;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+}
+
+.logo a:hover{
+    color: #FF5733;
+    transform: scale(1.05);
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+    display: flex;
+    
+}
+
+nav li {
+    margin-right: 20px;
+    padding: 10px;
+    opacity: 1;
+    border-radius: 100px;
+    background-color: #222222;
+    
+}
+nav li:hover {
+    transform: scale(1.05);
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    opacity: 1;
+    box-shadow: 0 7px 10px rgba(10, 0, 0, 1);
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FF5733;
+    opacity: 1;
+}
+
+
+h2{
+    font-size: 50px;
+    margin: 0 auto 20 px auto;
+    color: #bdc3c7;
+    text-align: center;
+    position: relative;
+}
+
+.opacity-list  {
+    padding: 10px;
+}
+
+.opacity-list a  {
+    text-decoration: none;
+}
+
+#menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+  
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+  
+#menu li {
+    padding: 5px 0;
+    cursor: pointer;
+}
+  
+.shown {
+    display: block;
+}
+
+
+.submenu {
+    display: none;
+    position: fixed;
+    background-color: #333;
+    border-radius: 20px;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s, transform 0.3s;
+    list-style: none;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.has-submenu li {
+    margin-bottom: 10px;
+}
+
+.has-submenu:hover .submenu {
+    display: block;
+    opacity: 1;
+    margin-top: 50px;
+    list-style: none;
+}
+
+.bg {
+    width: 110%;
+    height: 120%;
+    background: url(planet-1702788.jpg) no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.text {
+	font-size: 50px;
+	color: #ffffff;
+	position: absolute;
+	left: 50%;
+	top: 20%;
+	transform: translate(-50%);
+	text-shadow: 5px 5px 15px #000000;
+	white-space: nowrap;
+    background-color: #333;
+    border-radius: 100px;
+    padding: 15px;
+    border-color: #000000;
+    text-align: center;
+    opacity: 0.9;
+}
+
+.main-text {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #a8b9c4;
+    font-size: 20px;
+    padding: 5px;
+}
+
+#my-name{
+    display: inline;
+    margin: 10px;
+    padding: 5px;
+    color: #222222;
+    background-color: #808080;
+    border-radius: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.data-list {
+    list-style: none;
+    top: 0;
+    left: 0;
+}
+
+.data-list li {
+    margin-top: 15px;
+    
+}
